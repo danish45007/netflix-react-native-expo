@@ -5,8 +5,6 @@ import categories from "../../assets/data/categories";
 import HomeCategory from "../../components/HomeCategory";
 import { FlatList } from "react-native";
 
-const firstCategories = categories.items;
-
 const HomeScreen = () => {
   return (
     <View style={styles.container}>

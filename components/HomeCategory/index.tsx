@@ -29,6 +29,7 @@ const HomeCategory: React.FC<HomeCategoryProps> = ({ category }) => {
           />
         )}
         horizontal
+        showsHorizontalScrollIndicator={false}
       />
     </>
   );
