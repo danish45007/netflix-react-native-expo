@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   title: {
+    marginTop: 5,
     padding: 5,
     fontSize: 24,
     fontWeight: "bold",
@@ -95,6 +96,16 @@ const styles = StyleSheet.create({
     fontWeight: "300",
     color: "#757575",
     paddingTop: 5,
+  },
+  episodeText: {
+    fontWeight: "bold",
+    padding: 5,
+  },
+  extraText: {
+    fontWeight: "bold",
+    padding: 5,
+    marginLeft: 5,
+    color: "#757575",
   },
 });
 
