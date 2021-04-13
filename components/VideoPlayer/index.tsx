@@ -11,7 +11,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ episode }) => {
   const video = React.useRef<Playback>(null);
-  const [status, setStatus] = React.useState({});
+  const [_, setStatus] = React.useState({});
   useEffect(() => {
     if (!video) return;
     (async () => {

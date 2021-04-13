@@ -6,7 +6,7 @@ import styles from "./styles";
 
 interface EpisodeItemProps {
   episode: Episode;
-  onPress: (episode: Episode) => {};
+  onPress: Function;
 }
 
 const EpisodeItem: React.FC<EpisodeItemProps> = ({ episode, onPress }) => {

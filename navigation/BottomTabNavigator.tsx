@@ -17,39 +17,41 @@ export default function BottomTabNavigator() {
   const colorScheme = useColorScheme();
 
   return (
-    <BottomTab.Navigator
-      initialRouteName="TabOne"
-      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}
-    >
-      <BottomTab.Screen
-        name="Home"
-        component={TabOneNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <AntDesign name="home" size={24} color={color} />
-          ),
-        }}
-      />
-      <BottomTab.Screen
-        name="Search"
-        component={TabTwoNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <MaterialIcons name="search" size={24} color={color} />
-          ),
-        }}
-      />
+    <>
+      <BottomTab.Navigator
+        initialRouteName="TabOne"
+        tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}
+      >
+        <BottomTab.Screen
+          name="Home"
+          component={TabOneNavigator}
+          options={{
+            tabBarIcon: ({ color }) => (
+              <AntDesign name="home" size={24} color={color} />
+            ),
+          }}
+        />
+        <BottomTab.Screen
+          name="Search"
+          component={TabTwoNavigator}
+          options={{
+            tabBarIcon: ({ color }) => (
+              <MaterialIcons name="search" size={24} color={color} />
+            ),
+          }}
+        />
 
-      <BottomTab.Screen
-        name="Download"
-        component={TabTwoNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="download" size={24} color={color} />
-          ),
-        }}
-      />
-    </BottomTab.Navigator>
+        <BottomTab.Screen
+          name="Download"
+          component={TabTwoNavigator}
+          options={{
+            tabBarIcon: ({ color }) => (
+              <Ionicons name="download" size={24} color={color} />
+            ),
+          }}
+        />
+      </BottomTab.Navigator>
+    </>
   );
 }
 
