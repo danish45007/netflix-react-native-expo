@@ -8,7 +8,12 @@ import useColorScheme from "./hooks/useColorScheme";
 import Navigation from "./navigation";
 import { withAuthenticator } from "aws-amplify-react-native";
 import awsconfig from "./aws-exports";
-Amplify.configure(awsconfig);
+Amplify.configure({
+  ...awsconfig,
+  Analytics: {
+    disabled: true,
+  },
+});
 Auth.configure(awsconfig);
 
 function App() {
