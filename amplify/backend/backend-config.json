@@ -1,6 +1,6 @@
 {
   "auth": {
-    "netflixb2ffae38": {
+    "netflixrn9db9e8b7": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -8,7 +8,7 @@
     }
   },
   "api": {
-    "netflix": {
+    "netflixrn": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -16,7 +16,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authnetflixb2ffae38"
+              "userPoolId": "authnetflixrn9db9e8b7"
             }
           },
           "additionalAuthenticationProviders": []

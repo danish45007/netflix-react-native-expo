@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "netflixb2ffae38_identitypool_b2ffae38",
+    "identityPoolName": "netflixrn9db9e8b7_identitypool_9db9e8b7",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "netflib2ffae38",
-    "userPoolName": "netflixb2ffae38_userpool_b2ffae38",
+    "resourceNameTruncated": "netfli9db9e8b7",
+    "userPoolName": "netflixrn9db9e8b7_userpool_9db9e8b7",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "netflib2ffae38_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "netfli9db9e8b7_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "b2ffae38",
-    "resourceName": "netflixb2ffae38",
+    "sharedId": "9db9e8b7",
+    "resourceName": "netflixrn9db9e8b7",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
